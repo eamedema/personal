@@ -95,14 +95,14 @@ a {
   transition: 1s;
 }
 
-.about:hover {
+.about:hover, .about:active{
   flex: 2;
   font-family: 'Major Mono Display', monospace;
   background-color: lightgreen;
   transition: 1s;
 }
 
-.about:hover > .links {
+.about:hover > .links, .about:active > .links {
   font-size: 70px;
   text-shadow: 0 0 25px green;
   padding: 20px 30px;
@@ -121,14 +121,14 @@ a {
   transition: 1s;
 }
 
-.work:hover {
+.work:hover, .work:active {
   flex: 2;
   font-family: 'Major Mono Display', monospace;
   background-color: #99a6ea;
   transition: 1s;
 }
 
-.work:hover > .links {
+.work:hover > .links, .work:active > .links {
   font-size: 70px;
   text-shadow: 0 0 25px #5a6fdd;
   padding: 20px 30px;
@@ -146,14 +146,14 @@ a {
   transition: 1s;
 }
 
-.contact:hover {
+.contact:hover, .contact:active {
   flex: 2;
   font-family: 'Major Mono Display', monospace;
   background-color: #ea99a6;
   transition: 1s;
 }
 
-.contact:hover > .links {
+.contact:hover > .links, .contact:active > .links {
   font-size: 70px;
   text-shadow: 0 0 25px #dd5a6f;
   padding: 20px 30px;
