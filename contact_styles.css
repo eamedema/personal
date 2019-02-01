@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Major Mono Display', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+em {
+  font-style: none;
+  text-decoration: underline;
+  font-weight: 700;
+  padding: 20px 0 20px 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+a:hover {
+  font-weight: bold;
+
+}
+
+
+a:visited {
+  color: black;
+}
+
+.container {
+  height: 100vh;
+  align-items: center;
+}
+
+.banner {
+  position: fixed;
+
+  color: black;
+  height: 7.5vh;
+  z-index: 20;
+  background-color: white;
+  width: 100vw;
+  text-align: center;
+  padding-top: 2.5vh;
+}
+
+.footer {
+  font-size: 14px;
+  margin-top: 94vh;
+  position: fixed;
+
+  color: black;
+  height: 6vh;
+  z-index: 20;
+  background-color: white;
+  width: 100vw;
+  text-align: center;
+  padding-top: 2vh;
+}
+
+
+.content {
+  position: absolute;
+  margin-top: 7.5vh;
+  margin-bottom: 6vh;
+  height: 86vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: background-fade 10s ease-out infinite alternate;
+  height: 100%;
+  width: 100%;
+}
+
+.email-button {
+  background-color: #dd5a6f;
+  transition: 1s;
+  color: white;
+  padding: 2px;
+  transition: .5s;
+}
+
+.contact-form > .email-button {
+  color: white;
+}
+
+.email-button:hover {
+  text-decoration: line-through;
+  transition: 1s;
+  cursor: pointer;
+  padding: 5px 10px 5px 10px;
+  transition: .5s;
+}
+
+.full-menu {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 50px;
+  max-width: 50vw;
+}
+
+.links {
+  letter-spacing: 5px;
+  color: #ea99a6;
+  transition: 1s;
+  padding: 20px 30px;
+  box-shadow: inset 0 0 40px #dd5a6f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contact {
+  width: 50vw;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  background-color: #ea99a6;
+  transition: 1s;
+  font-size: 70px;
+  text-shadow: 0 0 25px #dd5a6f;
+  padding: 20px 30px;
+  color: #ea99a6;
+  transition: 1s;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+
+@keyframes background-fade {
+  0% {
+    background-color: linear-gradient(to bottom right, #ea99a6, white);
+  }
+  20% {
+    background-color: linear-gradient(to top left, #ea99a6, white)
+  }
+  40% {
+    background-color: linear-gradient(to top right, #ea99a6, white)
+  }
+  60% {
+    background-color: radial-gradient(#ea99a6, white)
+  }
+  80% {
+    background-color: linear-gradient(to bottom left, #ea99a6, white)
+  }
+  100% {
+    background-color: linear-gradient(to top left, #ea99a6, white)
+  }
+}
