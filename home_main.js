@@ -27,7 +27,7 @@ $(()=>{
     });
   }
 
-  $('.contact').on("touchstart", ()=>{
+  $('.contact').bind("touchstart", ()=>{
     $('.contact').css({
       "flex": "2",
       "font-family": "Major Mono Display, monospace",
@@ -35,7 +35,7 @@ $(()=>{
       "transition": "1s"
     });
   });
-  $('.contact').on("touchend", ()=>{
+  $('.contact')..bind("touchend", ()=>{
     $('.contact').css({
       "flex": "1",
       "background-color": "#747679",
