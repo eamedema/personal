@@ -27,8 +27,7 @@ $(()=>{
     });
   }
 
-  $('.contact').on("touchstart touchend", function(e){
-    e.preventDefault();
+  $('.contact').on("touchstart touchend", ()=>{
     $('.contact').css({
       "flex": "2",
       "font-family": "Major Mono Display, monospace",
