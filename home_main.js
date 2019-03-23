@@ -27,7 +27,8 @@ $(()=>{
     });
   }
 
-  $('.contact').bind("touchstart", ()=>{
+  $('.contact').on("touchstart touchend", function(e){
+    e.preventDefault();
     $('.contact').css({
       "flex": "2",
       "font-family": "Major Mono Display, monospace",
@@ -35,14 +36,14 @@ $(()=>{
       "transition": "1s"
     });
   });
-  $('.contact')..bind("touchend", ()=>{
-    $('.contact').css({
-      "flex": "1",
-      "background-color": "#747679",
-      "transition": "1s",
-      "font-family": "Rye, cursive"
-    })
-  });
+  // $('.contact')..bind("touchend", ()=>{
+  //   $('.contact').css({
+  //     "flex": "1",
+  //     "background-color": "#747679",
+  //     "transition": "1s",
+  //     "font-family": "Rye, cursive"
+  //   })
+  // });
 
 
 });
